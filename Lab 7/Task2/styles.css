@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p, a {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+h1 {
+    color: #4080ff;
+    font-size: 2.5em;
+    text-align: center;
+    font-style: underline
+}
+
+.highlight {
+    background-color: #d0e0ff;
+    padding: 10px;
+}
+
+#main-title {
+    font-family: "Helvetica";
+}
+
+#para1 {
+    width: fit-content;
+    max-width: 100%;
+    margin-inline: auto;
+    padding: 1em;
+    background-color: #DAF8D0;
+}
+
+body {
+    background-image: url('images/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#imageDesc {
+    color:brown
+}
+
+.imageCrop {
+    overflow: hidden;
+    width: 635px;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+    border: 0.25em solid black;
+    border-radius: 1em;
+
+}
+
+.imageCrop img {
+    margin: 0px -4px;
+    flex-shrink: 0;
+}
+
+button {
+    font-size: 1em;
+    cursor: pointer;
+    color: #123456;
+    background-color: #d0e0ff;
+    border: 2px solid #654321;
+    border-radius: 5em;
+    padding: 0.6em 1.2em;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+    color: #ffffff;
+    background-color: #4080ff;
+    transform: translateY(-2px);
+}
+
+button:focus-visible {
+    outline: 3px solid #123456;
+    outline-offset: 3px;
+}
+
+.toggleButtons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.trollImages {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.trollImages > div {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    min-width: 0;
+}
+
+.trollImages img {
+    display: none;
+    max-width: 100%;
+    height: auto;
+}

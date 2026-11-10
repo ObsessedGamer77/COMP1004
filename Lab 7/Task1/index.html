@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>
+            My amazing real blog
+        </title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body class="highlight">
+        <div>
+            <h1 id="main-title">
+                Big Boy Blogs
+            </h1>
+        </div>
+        <div>
+            <h3>
+                Aint no way
+            </h3>
+        </div>
+        <div>
+            <p>
+                Last night my flatmates did a silly and forgot their fridge/freezer broke.
+                <br>It did not.
+                <br>Somehow they managed to turn it off at the plug???
+                <br>See <a href="https://www.wikihow.com/Repair-an-Electric-Cord#:~:text=plug%20halves%20secure.-,6,Test%20the%20cord%20by%20plugging%20it%20into%20a%20functional%20outlet,-.%20If%20possible">here</a> how they could have fixed their mistake.
+            </p>
+        </div>
+        <div>
+            <p id="imageDesc">
+                The mechanic when he arrived and saw the fridge switched off:
+                <br>
+                <div class="imageCrop">
+                    <img src="https://images.news18.com/ibnlive/uploads/2026/06/disappointed-cricket-fan-pakistan-2026-06-e3227452bb9845427b11ec8677789145.png" alt="Unimpressed pakistani man" width="640" height="360">
+                </div>
+            </p>
+        </div>
+        <div class="toggleButtons">
+            <button id="toggleTroll1">Toggle Visibility1</button>
+            <button id="toggleTroll2">Toggle Visibility2</button>
+        </div>
+        <div class="trollImages">
+            <div id="trollContent1">
+                <img src="https://upload.wikimedia.org/wikipedia/en/7/73/Trollface.png" alt="Troll face" width="640" height="360">
+            </div>
+            <div id="trollContent2">
+                <img src="https://i.insider.com/602ee9ced3ad27001837f2ac?width=1300&format=jpeg&auto=webp" alt="Rick Roll" width="640" height="360">
+            </div>
+        </div>
+
+        <script>
+            document.querySelectorAll(".toggleButtons button").forEach(function(button, index) {
+                button.addEventListener("click", function() {
+                    var trollImage = document.querySelector("#trollContent" + (index + 1) + " img");
+                    trollImage.style.display = window.getComputedStyle(trollImage).display === "none" ? "block" : "none";
+                });
+            });
+        </script>
+    </body>
+
+</html>
